@@ -1,0 +1,143 @@
+.text_content {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+}
+.content-header {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+}
+@media (min-width: 1050px) {
+  .content-header {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+  }
+}
+.content-s {
+  max-width: 340px;
+}
+@media (min-width: 768px) {
+  .content-m {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1050px) {
+  .content-l {
+    max-width: 940px;
+  }
+}
+.content-s,
+.content-m,
+.content-l {
+  margin: auto;
+}
+.footer {
+  background: #316099;
+  color: #ffffff;
+}
+.footer-wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.footer__text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+}
+.footer__content-header {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+}
+.datalist__label,
+.datalist__content {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer__contact-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 48px;
+}
+.footer__blue-button {
+  margin: 32px auto auto 0;
+}
+.footer__column {
+  display: flex;
+  align-content: center;
+}
+.footer__logo {
+  display: inline-flex;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+.datalist {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  opacity: 1;
+  margin-bottom: 24px;
+}
+dl:last-child,
+li:last-child {
+  margin-bottom: 40px;
+}
+li {
+  margin-bottom: 22px;
+}
+.footer__copyright {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  padding: 24px 0 64px;
+}
+.footer-column__header {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  margin-bottom: 32px;
+}
+.footer-contacts {
+  text-align: center;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .footer {
+    border-top-right-radius: 100px;
+  }
+}
+@media (min-width: 1050px) {
+  .footer {
+    padding-right: 106px;
+  }
+  .footer-contacts {
+    text-align: left;
+  }
+  .footer__text-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-right: 0;
+    padding: 96px 0;
+  }
+  .footer__contact-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding-top: 96px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__blue-button {
+    margin-top: auto;
+  }
+  .footer {
+    margin-right: 96px;
+    padding-right: 212px;
+  }
+}

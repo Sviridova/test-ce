@@ -1,0 +1,44 @@
+@import "variables.less";
+
+.text_content {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: @letter_spacing_5;
+  opacity: @opacity_6;
+}
+
+.content-header {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: @letter_spacing_5;
+}
+
+@media (min-width: @small_desktop) {
+  .content-header {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: @letter_spacing_5;
+  }
+}
+
+.content-s {
+  max-width: 340px;
+}
+
+@media (min-width: @tablet) {
+  .content-m {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: @small_desktop) {
+  .content-l {
+    max-width: 940px;
+  }
+}
+
+.content-s,
+.content-m,
+.content-l {
+  margin: auto;
+}

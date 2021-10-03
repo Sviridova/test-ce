@@ -1,0 +1,23 @@
+{
+  "name": "test_ce",
+  "version": "1.0.0",
+  "description": "\"d-element test\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"test_ce\""
+  },
+  "author": "Sviridova",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-less": "^5.0.0"
+  }
+}

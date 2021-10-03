@@ -1,0 +1,49 @@
+@import "variables.less";
+@import "common.less";
+
+.header {
+  display: flex;
+  width: 100%;
+  padding: 35px 0;
+  align-items: center;
+  align-content: center;
+}
+
+.header__logo {
+  margin-left: 38px;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.header__burger {
+  margin-left: auto;
+  margin-right: 38px;
+}
+
+.burger__lines {
+  display: flex;
+  flex-direction: column;
+}
+
+.burger__line {
+  width: 24px;
+  height: 2px;
+  background: #356EAD;
+  margin: 2px 0;
+}
+
+.burger__line:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: @small_desktop) {
+  .header__logo {
+    margin-left: 83px;
+  }
+
+  .header__burger {
+    margin-right: 87px;
+  }
+}

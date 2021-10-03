@@ -1,0 +1,121 @@
+@import "variables.less";
+@import "common.less";
+
+.index-page-footer {
+  background: @blue_04;
+}
+
+.index-page-footer__content {
+  color: @white;
+  padding: (@padding_footer/2) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-page-footer__text-content {
+  display: block;
+  padding-bottom: (@padding_footer/2);
+}
+
+.index-page-footer__header {
+  .content-header;
+  padding-right: @padding_footer;
+  margin-bottom: @margin_footer_small;
+}
+
+.index-page-footer__text {
+  .text_content
+}
+
+.index-page-footer__header,
+.index-page-footer__text {
+  display: inline-block;
+  width: initial;
+}
+
+.client-logo-table {
+  display: grid;
+  grid-template-columns: repeat(2, 170px);
+  grid-auto-rows: 98px;
+}
+
+.client-logo-table__item {
+  align-content: center;
+  display: flex;
+  border-right: 1px solid fade(@white, 40%);
+  border-bottom: 1px solid fade(@white, 40%);
+}
+
+.client-logo-table div:nth-child(2n) {
+  border-right: none;
+}
+
+.client-logo-table div:nth-child(n+7) {
+  border-bottom: none;
+}
+
+.client-logo {
+  margin: auto;
+}
+
+.more-client-link-wrapper {
+  background: fade(@blue_01, 20%);
+}
+
+@media (min-width: @tablet) {
+  .index-page-footer__header,
+  .index-page-footer__text {
+    display: flex;
+  }
+
+  .index-page-footer {
+    border-top-left-radius: (@footer_border_radius/2);
+  }
+
+  .client-logo-table {
+    display: grid;
+    grid-template-columns: repeat(2, 235px);
+    grid-auto-rows: 98px;
+  }
+}
+
+@media (min-width: @small_desktop) {
+  .index-page-footer__content {
+    padding: @padding_footer 0;
+  }
+
+  .index-page-footer__text-content {
+    display: block;
+    padding-bottom: @padding_footer;
+  }
+
+  .index-page-footer__content {
+    display: block;
+    flex-direction: unset;
+    align-items: unset;
+  }
+
+  .client-logo-table {
+    grid-template-columns: repeat(4, 235px);
+  }
+
+  .client-logo-table div:nth-child(2n) {
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .client-logo-table div:nth-child(4n) {
+    border-right: none;
+  }
+
+  .client-logo-table div:nth-child(n+5) {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .index-page-footer {
+    border-top-left-radius: @footer_border_radius;
+  }
+}
